@@ -1,0 +1,16 @@
+{
+  "data": {
+    "id": "1138848110735527936",
+    "name": "echo",
+    "options": [
+      {
+        "name": "message",
+        "type": 3,
+        "value": "this is a test message"
+      }
+    ],
+    "type": 1
+  },
+  "token": "XXXXXX",
+  "type": 2
+}
