@@ -1,14 +1,10 @@
-# Welcome to your CDK TypeScript project
+# Discord Bot on AWS Lambda
 
-This is a blank project for CDK development with TypeScript.
+## Testing Locally
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+Send a request to the Flask app this way. Put a sample request (which you can get by logging the JSON in Lambda). PUt it in `test_request.json`. Then start up the bot as
+a Flask app. Then send the request to the Flask app.
 
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+```sh
+curl -X POST -H "Content-Type: application/json" -d @test_request.json http://127.0.0.1:5000/
+```
