@@ -3,7 +3,6 @@
 *.d.ts
 node_modules
 .env
-test_request.json
 
 # CDK asset staging directory
 .cdk.staging
